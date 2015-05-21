@@ -1,0 +1,35 @@
+#!wing
+#!version=5.0
+##################################################################
+# Wing IDE project file                                          #
+##################################################################
+[project attributes]
+debug.launch-configs = (1,
+                        {'launch-ObyPBuaJlRwlSaWx': ({},
+        {'buildcmd': ('project',
+                      None),
+         'env': ('project',
+                 [u'']),
+         'name': u'Launch manage.py',
+         'pyexec': ('project',
+                    u''),
+         'pypath': ('project',
+                    ''),
+         'pyrunargs': ('project',
+                       '-u'),
+         'runargs': u'runserver --noreload 192.168.1.20:8000',
+         'rundir': ('project',
+                    u'')})})
+proj.directory-list = [{'dirloc': loc('EMCapplication'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
+proj.file-type = 'shared'
+proj.launch-config = {loc('EMCapplication/manage.py'): ('custom',
+        (u'',
+         'launch-ObyPBuaJlRwlSaWx'))}
+proj.main-file = loc('EMCapplication/manage.py')
+testing.test-framework = {loc('EMCapplication/manage.py'): ':internal django'\
+        'test'}

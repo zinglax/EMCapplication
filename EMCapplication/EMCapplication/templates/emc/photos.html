@@ -1,0 +1,15 @@
+{% extends "emc/base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+
+<div data-role="content" data-theme="{{ theme }}" class="ui-body ui-corner-all ui-overlay-shadow">
+<h1>Welcome to the Home page </h1>
+
+{% for p in photos %}
+  <img src="{{ p.model_pic.url }}">
+{% endfor %}
+
+
+
+{% endblock %}

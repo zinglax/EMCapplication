@@ -1,0 +1,32 @@
+{% extends "emc/base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+
+<div data-role="content" data-theme="{{ theme }}" class="ui-body ui-corner-all ui-overlay-shadow">
+<h1>Welcome to the Home page </h1>
+
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Pushups</h3>
+        <p><input type="file" name="photo" accept="image/*" capture="camera"></p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Situps</h3>
+        <p>I'm the expanded content.</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Sit and Reach</h3>
+        <p>I'm the expanded content.</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Posture</h3>
+        <p>I'm the expanded content.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}
