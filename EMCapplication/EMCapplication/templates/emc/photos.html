@@ -4,10 +4,10 @@
 
 
 <div data-role="content" data-theme="{{ theme }}" class="ui-body ui-corner-all ui-overlay-shadow">
-<h1>Welcome to the Home page </h1>
+<h1>Welcome to the Photos page </h1>
 
 {% for p in photos %}
-  <img src="{{ p.model_pic.url }}">
+  <img src="{{ p.model_pic.url }}" height="50%">
 {% endfor %}
 
 
