@@ -6,7 +6,7 @@
 <div data-role="content" data-theme="{{ theme }}" class="ui-body ui-corner-all ui-overlay-shadow">
 <h1>Welcome to the Upload Picture page </h1>
 
-<form action="{% url 'upload_pic' %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+<form action="{% url 'upload_pic' %}" method="post" enctype="multipart/form-data" data-ajax="false">{% csrf_token %}
 {{ form.errors }}
 {{ form.non_field_errors }}
     <p>
